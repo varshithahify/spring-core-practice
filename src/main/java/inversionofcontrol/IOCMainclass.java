@@ -24,7 +24,7 @@ class Student{
 		pen.write();
 	}
 }
-public class Mainclass {
+public class IOCMainclass {
 public static void main(String[] args) {
 	Pen p=new Bluepen();
 	Student s=new Student(p);
