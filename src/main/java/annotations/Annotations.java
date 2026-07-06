@@ -16,17 +16,9 @@ class AppConfig {
 
 }
 
-// ======================
-// DEPENDENCY INTERFACE
-// ======================
-
 interface Pen {
     void write();
 }
-
-// ======================
-// BEAN 1
-// ======================
 
 @Component("bluePen")
 @Primary
@@ -50,6 +42,7 @@ class Student {
 	@Value("Varshitha")
     private String name;
     private Pen pen;
+    
     @Autowired
     public Student(@Qualifier("redPen") Pen pen) {
         this.pen = pen;
